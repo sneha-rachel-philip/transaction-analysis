@@ -23,11 +23,11 @@ def transform_data(input_df: DataFrame) -> DataFrame:
 
     # Applying window function to rank the counterparty with the highest amount per user_id
     window_spec = Window.partitionBy("user_id").orderBy(col("amount").desc())
-    df = df.withColumn("rank", dense_rank().over(window_spec)) \
+    finalDf = df.withColumn("rank", dense_rank().over(window_spec)) \
         .where(col("rank") == 1) \
         .drop("rank")
 
-    return df
+    return finalDf
 
 
 def write_data(df: DataFrame, path: str):
