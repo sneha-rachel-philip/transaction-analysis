@@ -1,0 +1,7 @@
+user_id;account_id;counterparty_id;transaction_type;date;amount
+u1;u1a1;u3;outgoing;2023-01-01;100
+u1;u1a2;u3;incoming;2023-01-02;200
+u1;u1a2;u4;outgoing;2023-01-03;150
+u2;u2a1;u5;outgoing;2023-01-02;100
+u2;u2a1;u6;outgoing;2023-01-04;120
+u1;u1a1;u4;incoming;2023-01-05;200

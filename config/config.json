@@ -1,0 +1,4 @@
+{
+  "input_file": "data/transaction_data.csv",
+  "output_path": "output/"
+}
